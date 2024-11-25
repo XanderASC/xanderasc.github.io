@@ -1,0 +1,369 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+}
+#container {
+    background-color: #222;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-width: 360px;
+    overflow: clip;
+    position: relative;
+}
+/*
+█   █   ■■■■■    ■■■    ■■■■    ■■■■■   ■■■■
+█   █   █       █   █   █   █   █       █   █
+█■■■█   █■■■    █■■■█   █   █   █■■■    █■■█
+█   █   █       █   █   █   █   █       █   █
+█   █   ■■■■■   █   █   ■■■■    ■■■■■   █   █
+*/
+header .hidden {
+    right: -200px;
+}
+header {
+    background-color: #222;
+    color: #f04;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header .title {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    font-size: 1.5rem;
+    margin: auto 0 auto 2rem;
+}
+nav {
+    position: relative;
+}
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #f04;
+    cursor: pointer;
+    font-size: 3rem;
+    margin: -3px 0 0 0;
+    padding: 0 10px ;
+}
+.logo {
+    border: 1px solid #f04;
+    box-sizing: border-box;
+    height: 62px;
+    width: 62px;
+}
+.popup-nav {
+    background-color: #333;
+    box-sizing: border-box;
+    height: 100vh;
+    list-style-type: none;
+    padding: 20px 0 0 0;
+    position: absolute;
+    right: -10px;
+    top: 56px;
+    transition: .4s ease;
+    width: 170px;
+}
+.popup-nav li:hover a {
+    background-color: #f04;
+    color: #222;
+}
+.popup-nav a {
+    color: #f04;
+    display: block;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: .25rem 0 .25rem 35px;
+    text-decoration: none;
+    transition: color .1s ease, background-color .1s ease;
+}
+/*
+█   █   ■■■■■   ■■■■     ■■■ 
+█   █   █       █   █   █   █
+█■■■█   █■■■    █■■█    █   █
+█   █   █       █   █   █   █
+█   █   ■■■■■   █   █    ■■■ 
+*/
+#hero {
+    background-color: #222;
+    color: #f04;
+    padding: 5rem 4rem 8rem;
+    position: relative;
+}
+.hero-title {
+    display: inline-block;
+    font-size: 4rem;
+    margin: 0;
+    width: 300px;
+}
+#hero div {
+    position: relative;
+    width: 100%;
+}
+#cta {
+    color: #f04;
+    font-size: 1.5rem;
+    padding: 20px 10px 10px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+}
+#cta svg {
+    display: inline;
+    fill:none;
+    height: 20px;
+    margin-left: 10px;
+    stroke:#f04;
+    stroke-width: 2;
+    width: 20px;
+}
+/*
+█   █    ■■■    ■■■■■   █   █   
+██ ██   █   █     █     ██  █   
+█ █ █   █■■■█     █     █ █ █   
+█   █   █   █     █     █  ██   
+█   █   █   █   ■■■■■   █   █   
+*/
+h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+.svg-top, .svg-bottom {
+    fill: url(#gradient);
+    height: 64px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.svg-top {
+    top: -1px;
+}
+.svg-bottom {
+    bottom: -1px;
+}
+#skills .svg-top, #resume .svg-top {
+    top: -49px;
+}
+#skills .svg-bottom, #resume .svg-bottom {
+    bottom: -49px;
+}
+#hero .svg-top {
+    top: 0px;
+}
+#about-me, #contact {
+    background-image: linear-gradient(to right, #f07, #f00);
+    color: #222;
+    padding: 6rem 3rem;
+}
+#skills, #resume {
+    background-color: #222;
+    color: #f04;
+    padding: 6rem 3rem;
+    margin: 3rem 0;
+}
+#resume a {
+    margin: 0;
+    padding: 0;
+}
+.download {
+    fill: none;
+    height: 36px;
+    margin-bottom: -7px;
+    padding: 0;
+    stroke: #f04;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4px;
+    width: 36px;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+/*
+■■■■■    ■■■     ■■■    ■■■■■   ■■■■■   ■■■■
+█       █   █   █   █     █     █       █   █
+█■■     █   █   █   █     █     █■■■    █■■█
+█       █   █   █   █     █     █       █   █
+█        ■■■     ■■■      █     ■■■■■   █   █
+*/
+footer {
+    background-color: #333;
+    padding: 2rem 3rem;
+}
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    color: #ddd;
+    border: 2px solid #333;
+    font-size: .8rem;
+    text-decoration: none;
+    transition: border .2s ease;
+}
+footer a:hover {
+    border-bottom: 2px solid #f04;
+}
+footer p {
+    color: #ddd;
+    display: block;
+    margin-top: 1rem; ;
+    text-align: center;
+}
+section {
+    position: relative;
+}
+/*
+█  █    █  █     ■■■
+█  █    █  █    █   █
+■■■■■   ■■■■■   █ █ █
+   █       █    █   █
+   █       █     ■■■
+*/
+@media screen and (min-width: 440px) {
+    h1 {
+        font-size: 2.2rem;
+        margin: auto 0 auto 2rem;
+    }
+    body footer a {
+        font-size: 1rem;
+    }
+}
+/*
+■■■■■    ■■■    ■■■■■
+█       █   █   █
+■■■■■   █ █ █   ■■■■■
+    █   █   █       █
+■■■■■    ■■■    ■■■■■
+*/
+@media screen and (min-width: 505px) {
+    h1 {
+        font-size: 2.8rem;
+        margin: auto 0 auto 2rem;
+    }
+    #cta {
+        bottom: 0;
+    }
+    #hero {
+        display: flex;
+        padding: 6rem 4rem;
+    }
+}
+/*
+■■■■■   █  █     ■■■ 
+█       █  █    █   █
+■■■■■   ■■■■■   █ █ █
+█   █      █    █   █
+■■■■■      █     ■■■ 
+*/
+@media screen and (min-width: 640px) {
+    #hero {
+        padding: 9rem calc(20vw - 4rem);
+    }
+    .hero-title {
+        font-size: 5rem;
+    }
+    #about-me, #contact, #skills, #resume {
+        padding: 6rem calc(20vw - 5rem);
+    }
+    #cta {
+        font-size: 2rem;
+    }
+    #cta svg {
+        width: 26.6666666666px;
+        height: 26.6666666666px;
+    }
+}
+/*
+■■■■■   █  █     ■■■ 
+█   █   █  █    █   █
+■■■■■   ■■■■■   █ █ █
+    █      █    █   █
+■■■■■      █     ■■■ 
+*/
+@media screen and (min-width: 940px) {
+    nav button {
+        display: none;
+    }
+    .popup-nav {
+        background-color: transparent;
+        display: flex;
+        height: inherit;
+        margin: 13px 0;
+        padding: 0 1.5rem 0 0;
+        position: static;
+        transition: 0s;
+        width: 100%;
+    }
+    .popup-nav a {
+        padding: .25rem 1rem;
+    }
+    body {
+        max-width: none;
+    }
+    #about-me, #contact{
+        padding: 10rem calc(20vw - 5rem);
+    }
+    #skills, #resume {
+        padding: calc(20vw - 96px) calc(20vw - 5rem);
+    }
+    #hero {
+        padding: calc(20vw - 96px) calc(30vw - 9.875rem);
+    }
+    .hero-title {
+        font-size: calc(5vw + 33px);
+    }
+    .title {
+        padding-left: calc(30vw - 17.625rem);
+    }
+    nav {
+        padding-right: calc(30vw - 17.625rem);
+    }
+    .svg-top, .svg-bottom {
+        height: calc(20vw - 124px);
+    }
+    footer div {
+        margin: 0 auto;
+        width: 844px;
+    }
+    #cta {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: calc(3vw + 19.8px);
+    }
+    .content div {
+        width: calc(10vw + 406px);
+    }
+    #about-me div {
+        margin-left: auto;
+    }
+    #skills div, #resume div {
+        margin: 0 auto;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    li {
+        font-size: 1.2rem;
+    }
+    #cta svg {
+        height: 40px;
+        width: 40px;
+    }
+    .download {
+        height: calc(3vw + 25.8px);
+        margin-bottom: calc((3vw / 5.1428571429 + 5.01666666667px) * -1);
+        width: calc(3vw + 25.8px);
+    }
+}

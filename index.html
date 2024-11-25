@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xander Sharkey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="title">
+                    <div class="logo">
+                        <img src="photos/logo.png" alt="logo">
+                    </div>
+                    <h1>Xander Sharkey</h1>
+                </div>
+                <nav>
+                    <button type="button">&#9776;</button>
+                    <ul class="popup-nav hidden">
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="hero">
+                <svg class="svg-top" viewBox="0 0 100 64" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="gradient">
+                            <stop offset="0%" stop-color="#f07" />
+                            <stop offset="100%" stop-color="#f00"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M0 0 L100 0 L100 1 L0 64 Z"></path>
+                </svg>
+                <svg class="svg-bottom" viewBox="0 0 100 64" preserveAspectRatio="none">
+                    <path d="M100 0 L100 64 L0 64 L0 63 Z"></path>
+                </svg>
+                <h2 class="hero-title">Web Design</h2>
+                <div>
+                    <a href="#contact" id="cta">Contacts<svg viewBox="0 0 20 20" preserveAspectRatio="none"><path d="M2 8 L10 18 L18 8"></path></svg></a>
+                </div>
+            </section>
+            <main>
+                <section id="about-me" class="content">
+                    <div>
+                        <h3>About Me</h3>
+                        <p>Hello! I'm Xander. I am an amateur web-programmer from Nova Scotia, Canada. I have been dabbling in various coding projects for around five years now. I am currently in my first year of college learning front-end web-developement and IT.</p>
+                        <p>My goal is to become a full-stack web-programmer, and expand to more advanced programming languages down the line.</p>
+                    </div>
+                </section>
+                <section id="skills" class="content">
+                    <svg class="svg-top" viewBox="0 0 100 64" preserveAspectRatio="none">
+                        <path d="M0 0 L100 0 L100 64 L0 1 Z"></path>
+                    </svg>
+                    <svg class="svg-bottom" viewBox="0 0 100 64" preserveAspectRatio="none">
+                        <path d="M0 0 L100 63 L100 64 L0 64 Z"></path>
+                    </svg>
+                    <div>
+                        <h3>Skills</h3>
+                        <p>Over the years, I have learned the following skills</p>
+                        <ul>
+                            <li>Basic HTML and CSS</li>
+                            <li>Basic JavaScript and Python</li>
+                            <li>Basic SQL</li>
+                        </ul>
+                        <p>These are skills that I am currently developing</p>
+                        <ul>
+                            <li>Advanced web-programming</li>
+                            <li>General IT</li>
+                            <li>Design fundamentals</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="contact" class="content">
+                    <div>
+                        <h3>Contact</h3>
+                        <p>I can be contacted at the following:</p>
+                        <ul>
+                            <li>email@notreal.ca</li>
+                            <li>+1 123-456-7890</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="resume" class="content">
+                    <svg class="svg-top" viewBox="0 0 100 64" preserveAspectRatio="none">
+                        <path d="M0 0 L100 0 L100 1 L0 64 Z"></path>
+                    </svg>
+                    <svg class="svg-bottom" viewBox="0 0 100 64" preserveAspectRatio="none">
+                        <path d="M100 0 L100 64 L0 64 L0 63 Z"></path>
+                    </svg>
+                    <div>
+                        <h3>Resume <a href=""><svg class="download" viewbox="0 0 36 36" preserveAspectRatio="none"><path d="M15 5 L15 24 M15 24 L25 14 M15 24 L5 14 M5 26.5 L5 32 L25 32 L25 26.5"></path></svg></a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fuga reiciendis veniam iure natus cupiditate, nesciunt expedita earum! Quo voluptates similique voluptatem quam libero est molestiae fugiat, modi suscipit porro.</p>
+                    </div>
+                </section>
+                <footer>
+                    <div>
+                        <a href="#about-me">About Me</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#resume">Resume</a>
+                        <a href="">Sitemap</a>
+                    </div>
+                    <p>&#9426; 2024 Fake Copyright :&rpar;</p>
+                </footer>
+            </main>
+        </div>
+        <script>
+            let btn = document.querySelector('nav button');
+            let nav = document.querySelector('.popup-nav');
+
+            btn.addEventListener('click', () => {
+                nav.classList.toggle('hidden');
+            })
+        </script>
+    </body>
+</html>
