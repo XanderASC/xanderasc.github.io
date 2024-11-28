@@ -109,7 +109,7 @@ nav button {
 #hero {
     background-color: #222;
     color: #f04;
-    padding: 5rem 4rem 8rem;
+    padding: 10rem 4rem 13rem;
     position: relative;
 }
 .hero-title {
@@ -151,7 +151,7 @@ nav button {
 h3 {
     font-family: BarlowMedium, sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
 }
 .svg-top, .svg-bottom {
@@ -203,8 +203,11 @@ h3 {
     width: 36px;
 }
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
+}
+li {
+    font-size: 1.2rem;
 }
 /*
 ■■■■■    ■■■     ■■■    ■■■■■   ■■■■■   ■■■■
@@ -251,6 +254,9 @@ section {
     h1 {
         font-size: 2.8rem;
     }
+    .hero-title {
+        font-size: 3.5rem;
+    }
     body footer a {
         font-size: 1rem;
     }
@@ -263,12 +269,11 @@ section {
 ■■■■■    ■■■    ■■■■■
 */
 @media screen and (min-width: 505px) {
-    #cta {
-        bottom: 0;
+    .hero-title {
+        font-size: 4.5rem;
     }
-    #hero {
-        display: flex;
-        padding: 6rem 4rem;
+    #cta {
+        font-size: 2rem;
     }
 }
 /*
@@ -280,7 +285,8 @@ section {
 */
 @media screen and (min-width: 640px) {
     #hero {
-        padding: 9rem calc(20vw - 4rem);
+        display: flex;
+        padding: 12rem calc(20vw - 4rem);
     }
     .hero-title {
         font-size: 4rem;
@@ -289,7 +295,7 @@ section {
         padding: 6rem calc(20vw - 5rem);
     }
     #cta {
-        font-size: 2rem;
+        bottom: 0;
     }
     #cta svg {
         width: 26.6666666666px;
@@ -330,7 +336,7 @@ section {
         padding: calc(20vw - 96px) calc(20vw - 5rem);
     }
     #hero {
-        padding: calc(20vw - 44px) calc(30vw - 9.875rem);
+        padding: calc(15vw + 31px) calc(30vw - 9.875rem);
     }
     .hero-title {
         font-size: calc(5vw + 33px);
