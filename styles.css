@@ -18,7 +18,6 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    max-width: 1920px;
 }
 #container {
     background-color: #222;
@@ -28,12 +27,12 @@ body {
     overflow: clip;
     position: relative;
 }
-/*
-█   █   ■■■■■    ■■■    ■■■■    ■■■■■   ■■■■
-█   █   █       █   █   █   █   █       █   █
-█■■■█   █■■■    █■■■█   █   █   █■■■    █■■█
-█   █   █       █   █   █   █   █       █   █
-█   █   ■■■■■   █   █   ■■■■    ■■■■■   █   █
+/*           
+██   ██ ███████  █████  ██████  ███████ ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+███████ █████   ███████ ██   ██ █████   ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██
 */
 header .hidden {
     right: -200px;
@@ -100,11 +99,11 @@ nav button {
     transition: color .1s ease, background-color .1s ease;
 }
 /*
-█   █   ■■■■■   ■■■■     ■■■ 
-█   █   █       █   █   █   █
-█■■■█   █■■■    █■■█    █   █
-█   █   █       █   █   █   █
-█   █   ■■■■■   █   █    ■■■ 
+██   ██ ███████ ██████   ██████  
+██   ██ ██      ██   ██ ██    ██ 
+███████ █████   ██████  ██    ██ 
+██   ██ ██      ██   ██ ██    ██ 
+██   ██ ███████ ██   ██  ██████                                       
 */
 #hero {
     background-color: #222;
@@ -113,10 +112,10 @@ nav button {
     position: relative;
 }
 .hero-title {
-    font-family: BarlowMedium, sans-serif;
-    font-weight: 200;
     display: inline-block;
+    font-family: BarlowMedium, sans-serif;
     font-size: 2.8rem;
+    font-weight: 200;
     margin: 0;
     width: 300px;
 }
@@ -142,16 +141,16 @@ nav button {
     width: 20px;
 }
 /*
-█   █    ■■■    ■■■■■   █   █   
-██ ██   █   █     █     ██  █   
-█ █ █   █■■■█     █     █ █ █   
-█   █   █   █     █     █  ██   
-█   █   █   █   ■■■■■   █   █   
+███    ███  █████  ██ ███    ██ 
+████  ████ ██   ██ ██ ████   ██ 
+██ ████ ██ ███████ ██ ██ ██  ██ 
+██  ██  ██ ██   ██ ██ ██  ██ ██ 
+██      ██ ██   ██ ██ ██   ████ 
 */
 h3 {
     font-family: BarlowMedium, sans-serif;
-    font-weight: 400;
     font-size: 3rem;
+    font-weight: 400;
     margin: 0;
 }
 .svg-top, .svg-bottom {
@@ -184,8 +183,8 @@ h3 {
 #skills, #resume {
     background-color: #222;
     color: #f04;
-    padding: 6rem 3rem;
     margin: 3rem 0;
+    padding: 6rem 3rem;
 }
 #resume a {
     margin: 0;
@@ -193,25 +192,25 @@ h3 {
 }
 .download {
     fill: none;
-    height: 36px;
+    height: 50px;
     margin-bottom: -7px;
     padding: 0;
     stroke: #f04;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3.5px;
-    width: 36px;
+    width: 50px;
 }
 p {
     font-size: 1.2rem;
     margin-bottom: 0;
 }
 /*
-■■■■■    ■■■     ■■■    ■■■■■   ■■■■■   ■■■■
-█       █   █   █   █     █     █       █   █
-█■■     █   █   █   █     █     █■■■    █■■█
-█       █   █   █   █     █     █       █   █
-█        ■■■     ■■■      █     ■■■■■   █   █
+███████  ██████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ 
 */
 footer {
     background-color: #333;
@@ -241,11 +240,11 @@ section {
     position: relative;
 }
 /*
-█  █    █  █     ■■■
-█  █    █  █    █   █
-■■■■■   ■■■■■   █ █ █
-   █       █    █   █
-   █       █     ■■■
+██   ██ ██   ██  ██████  
+██   ██ ██   ██ ██  ████ 
+███████ ███████ ██ ██ ██ 
+     ██      ██ ████  ██ 
+     ██      ██  ██████  
 */
 @media screen and (min-width: 440px) {
     h1 {
@@ -259,11 +258,11 @@ section {
     }
 }
 /*
-■■■■■    ■■■    ■■■■■
-█       █   █   █
-■■■■■   █ █ █   ■■■■■
-    █   █   █       █
-■■■■■    ■■■    ■■■■■
+███████  ██████  ███████ 
+██      ██  ████ ██      
+███████ ██ ██ ██ ███████ 
+     ██ ████  ██      ██ 
+███████  ██████  ███████ 
 */
 @media screen and (min-width: 505px) {
     .hero-title {
@@ -280,11 +279,11 @@ section {
     }
 }
 /*
-■■■■■   █  █     ■■■ 
-█       █  █    █   █
-■■■■■   ■■■■■   █ █ █
-█   █      █    █   █
-■■■■■      █     ■■■ 
+ ██████  ██   ██  ██████  
+██       ██   ██ ██  ████ 
+███████  ███████ ██ ██ ██ 
+██    ██      ██ ████  ██ 
+ ██████       ██  ██████  
 */
 @media screen and (min-width: 640px) {
     #hero {
@@ -301,16 +300,16 @@ section {
         bottom: 0;
     }
     #cta svg {
-        width: 26.6666666666px;
         height: 26.6666666666px;
+        width: 26.6666666666px;
     }
 }
 /*
-■■■■■   █  █     ■■■ 
-█   █   █  █    █   █
-■■■■■   ■■■■■   █ █ █
-    █      █    █   █
-■■■■■      █     ■■■ 
+ █████  ██   ██  ██████  
+██   ██ ██   ██ ██  ████ 
+ ██████ ███████ ██ ██ ██ 
+     ██      ██ ████  ██ 
+ █████       ██  ██████  
 */
 @media screen and (min-width: 940px) {
     nav button {
@@ -328,9 +327,6 @@ section {
     }
     .popup-nav a {
         padding: .25rem 1rem;
-    }
-    body {
-        max-width: none;
     }
     #about-me, #contact{
         padding: 10rem calc(20vw - 5rem);
