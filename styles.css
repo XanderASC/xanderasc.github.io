@@ -1,8 +1,21 @@
+@font-face {
+    font-family: Andada;
+    src: url(./fonts/Andada_Pro/AndadaPro-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: BarlowLight;
+    src: url(./fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+@font-face {
+    font-family: BarlowMedium;
+    src: url(./fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf);
+}
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Andada, serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     max-width: 1920px;
@@ -37,10 +50,10 @@ header {
 }
 header .title {
     display: flex;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: BarlowLight, sans-serif;
 }
 h1 {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     margin: auto 0 auto 2rem;
 }
 nav {
@@ -100,8 +113,10 @@ nav button {
     position: relative;
 }
 .hero-title {
+    font-family: BarlowMedium, sans-serif;
+    font-weight: 200;
     display: inline-block;
-    font-size: 4rem;
+    font-size: 2.8rem;
     margin: 0;
     width: 300px;
 }
@@ -134,6 +149,8 @@ nav button {
 █   █   █   █   ■■■■■   █   █   
 */
 h3 {
+    font-family: BarlowMedium, sans-serif;
+    font-weight: 400;
     font-size: 2rem;
     margin: 0;
 }
@@ -182,7 +199,7 @@ h3 {
     stroke: #f04;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 4px;
+    stroke-width: 3.5px;
     width: 36px;
 }
 p {
@@ -232,8 +249,7 @@ section {
 */
 @media screen and (min-width: 440px) {
     h1 {
-        font-size: 2.2rem;
-        margin: auto 0 auto 2rem;
+        font-size: 2.8rem;
     }
     body footer a {
         font-size: 1rem;
@@ -247,10 +263,6 @@ section {
 ■■■■■    ■■■    ■■■■■
 */
 @media screen and (min-width: 505px) {
-    h1 {
-        font-size: 2.8rem;
-        margin: auto 0 auto 2rem;
-    }
     #cta {
         bottom: 0;
     }
@@ -271,7 +283,7 @@ section {
         padding: 9rem calc(20vw - 4rem);
     }
     .hero-title {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     #about-me, #contact, #skills, #resume {
         padding: 6rem calc(20vw - 5rem);
@@ -318,7 +330,7 @@ section {
         padding: calc(20vw - 96px) calc(20vw - 5rem);
     }
     #hero {
-        padding: calc(20vw - 96px) calc(30vw - 9.875rem);
+        padding: calc(20vw - 44px) calc(30vw - 9.875rem);
     }
     .hero-title {
         font-size: calc(5vw + 33px);
