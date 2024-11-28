@@ -203,11 +203,8 @@ h3 {
     width: 36px;
 }
 p {
-    font-size: 1.5rem;
-    margin-bottom: 0;
-}
-li {
     font-size: 1.2rem;
+    margin-bottom: 0;
 }
 /*
 ■■■■■    ■■■     ■■■    ■■■■■   ■■■■■   ■■■■
@@ -274,6 +271,12 @@ section {
     }
     #cta {
         font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    li {
+        font-size: 1.2rem;
     }
 }
 /*
