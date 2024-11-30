@@ -66,6 +66,7 @@ nav button {
     font-size: 3rem;
     margin: -3px 0 0 0;
     padding: 0 10px ;
+    transition: color .1s ease;
 }
 .logo {
     border: 1px solid #0b8;
@@ -85,7 +86,7 @@ nav button {
     transition: .4s ease;
     width: 170px;
 }
-.popup-nav li:hover a {
+.popup-nav li:hover a, nav button:hover {
     color: #0f8;
 }
 .popup-nav a {
@@ -95,7 +96,7 @@ nav button {
     margin: 0;
     padding: .25rem 0 .25rem 35px;
     text-decoration: none;
-    transition: color .1s ease, background-color .1s ease;
+    transition: color .1s ease;
 }
 /*
 ██   ██ ███████ ██████   ██████  
