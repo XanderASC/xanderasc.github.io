@@ -346,10 +346,10 @@ section {
         padding: .25rem 1rem;
     }
     #about-me, #contact{
-        padding: 10rem calc(20vw - 5rem);
+        padding: calc(20vw - 96px) calc(30vw - 16rem) calc(20vw - 96px) calc(30vw - 16rem);
     }
     #skills, #resume {
-        padding: calc(20vw - 96px) calc(20vw - 5rem);
+        padding: calc(20vw - 48px) calc(20vw - 5rem);
     }
     #hero {
         padding: calc(15vw + 31px) calc(30vw - 9.875rem);
