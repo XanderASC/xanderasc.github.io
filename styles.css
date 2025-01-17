@@ -18,6 +18,7 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    background-color: #222;
 }
 #container {
     background-color: #222;
@@ -345,23 +346,20 @@ section {
     .popup-nav a {
         padding: .25rem 1rem;
     }
-    #about-me, #contact{
-        padding: calc(20vw - 96px) calc(30vw - 16rem) calc(20vw - 96px) calc(30vw - 16rem);
-    }
-    #skills, #resume {
-        padding: calc(20vw - 48px) calc(20vw - 5rem);
+    #about-me, #contact, #skills, #resume{
+        padding: calc(20vw - 96px) calc(30vw - 14rem);
     }
     #hero {
-        padding: calc(15vw + 31px) calc(30vw - 9.875rem);
+        padding: calc(15vw + 31px) calc(30vw - 10rem);
     }
     .hero-title {
         font-size: calc(5vw + 33px);
     }
     .title {
-        padding-left: calc(30vw - 17.625rem);
+        padding-left: calc(30vw - 15.625rem);
     }
     nav {
-        padding-right: calc(30vw - 17.625rem);
+        padding-right: calc(30vw - 15.625rem);
     }
     .svg-top, .svg-bottom {
         height: calc(20vw - 124px);
@@ -379,11 +377,8 @@ section {
     .content div {
         width: calc(10vw + 406px);
     }
-    #about-me div {
+    #about-me div, #contact div {
         margin-left: auto;
-    }
-    #skills div, #resume div {
-        margin: 0 auto;
     }
     p {
         font-size: 1.5rem;
