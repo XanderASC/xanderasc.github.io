@@ -150,6 +150,9 @@ nav button {
     stroke-width: 2;
     width: 20px;
 }
+.nowrap {
+    text-wrap: nowrap;
+}
 /* Main
 ███    ███  █████  ██ ███    ██ 
 ████  ████ ██   ██ ██ ████   ██ 
