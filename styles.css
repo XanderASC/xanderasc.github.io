@@ -340,8 +340,11 @@ section {
     .logo {
         margin: auto 0 auto 16px;
     }
-    #skills, #resume{
+    #skills, #resume {
         padding: calc(20vw - 96px) calc(30vw - 14rem);
+    }
+    #about-me, #contact {
+        padding-right: calc(30vw - 14rem);
     }
     #hero {
         padding: calc(15vw + 31px) calc(30vw - 10rem);
